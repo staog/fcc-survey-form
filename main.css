@@ -1,0 +1,47 @@
+body {
+  font-family: 'Audiowide', cursive;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+}
+
+#main {
+  max-width: 1024;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+#survey-container {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  margin: auto;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#survey-form > div {
+  padding: 10px;
+}
+
+#comment {
+  max-width: 400px;
+  width: 85%;
+}
+
+#submit {
+  font-family: 'Audiowide', cursive;
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Gran Turismo Survey Form</title>
+</head>
+<body>
+  <div id="main">
+
+    <header>
+      <h1 id="title">Gran Turismo Survey Form</h1>
+    </header>
+
+    <p id="description">Do you like Gran Turismo (The Real Driving Simulator) franchise?</p>
+
+    <section id="survey-container">
+
+      <form id="survey-form" action="index.html" method="post">
+
+          <div>
+            <label id="name-label" for:"name">Name:</label>
+          </div>
+          <div>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+          </div>
+          <div>
+            <label id="email-label" for:"email">Email:</label>
+          </div>
+          <div>
+            <input id="email" type="email" name="mail" placeholder="Enter your Email" required><br>
+          </div>
+          <div>
+            <label id="number-label" for:"age">Your age</label>
+          </div>
+          <div>
+            <input id="number" name="age" min="7" max="77" placeholder="Age" type="number">
+          </div>
+          <div>
+            <label for="firstGame">Which Gran Turismo game you played first?</label>
+          </div>
+          <div>
+            <select id="dropdown" name="firstGame">
+              <option disabled value="">Select the game</option>
+              <option value="GT">GT</option>
+              <option value="GT2">GT2</option>
+              <option value="GT3">GT3</option>
+              <option value="GT4">GT4</option>
+              <option value="GT5">GT5</option>
+              <option value="GT6">GT6</option>
+            </select>
+          </div>
+          <div>
+            <label for="rating">Would you recomend GT to a friend?</label>
+          </div>
+          <div>
+            <input class="rating" type="radio" name="rate" value="yes" checked>Yes
+            <input class="rating" type="radio" name="rate" value="no">No
+            <input class="rating" type="radio" name="rate" value="maybe">Maybe<br>
+          </div>
+          <div>
+            <label for="checkbox">Which part of GT experience you like best?</label>
+          </div>
+          <div>
+            <label for="checkbox">(Check all that apply)</label>
+          </div>
+          <div>
+            <ul id="checkbox-list">
+              <li><input class="checkbox" type="checkbox" name="a-spec" value="1">A - Spec events</li>
+              <li><input class="checkbox" type="checkbox" name="b-spec" value="2">B - Spec events</li>
+            </ul>
+          </div>
+          <div>
+            <label for="comment">How can we improve?</label>
+          </div>
+          <div>
+            <textarea id="comment" name="comment" rows="6" cols="50" placeholder="Enter your comment here..."></textarea>
+          </div>
+          <div>
+            <button id="submit" type="submit" name="submit"><strong>Submit</strong></button>
+          </div>
+
+      </form>
+
+    </section>
+
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+
+</body>
+</html>
